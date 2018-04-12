@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Dojo Survey Index</title>
+</head>
+
+<body>
+    <h3>Test Survey</h3>
+    <!-- read on to learn about form actions, we'll talk about the method in a later section -->
+    <form action='/users' method='post'>
+        Your Name:
+        <input type='text' name='name'> Age:
+
+        <input type='text' name='age'>
+        <input type='submit' value='Submit'>
+    </form>
+
+    <h3>users</h3>
+    <% for(var i in users) { %>
+        <p>
+            <h3>Name: <%= users[i].name %></h3>
+            <h3>Age: <%= users[i].age %></h3>
+        </p>
+        <% } %>
+</body>
+
+</html>
