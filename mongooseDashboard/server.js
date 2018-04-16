@@ -42,6 +42,7 @@ app.get("/edit/:id", function (req,res){
 })
 app.get("/delete/:id", function (req,res){
   Animal.remove({_id:req.params.id}, function (err){
+    console.log("Deleted!")
     res.redirect('/');
   })
 })
