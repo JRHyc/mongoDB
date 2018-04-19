@@ -8,7 +8,6 @@
 
 # dependencies
 /node_modules
-/.node_modules
 
 # IDEs and editors
 /.idea
@@ -19,7 +18,7 @@
 .settings/
 *.sublime-workspace
 
-/.vscode
+# IDE - VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
